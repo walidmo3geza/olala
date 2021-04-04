@@ -22,6 +22,10 @@
                             @csrf
                             <input type="submit" value="Admin Controlling" class="btn btn-primary">
                         </form>
+                        <form method="post" action="/bookControlling">
+                            @csrf
+                            <input type="submit" value="Book Controlling" class="btn btn-primary">
+                        </form>
                 </div>
             </div>
         </div>

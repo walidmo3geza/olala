@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('welcome');
 });
 
 Auth::routes();
@@ -21,6 +21,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/adminControlling',function (){
     return view('adminControlling');
-})->middleware(['auth', 'adminCreation']);
+}); //->middleware(['auth', 'adminCreation']);
+
+Route::post('/bookControlling',function (){
+    return view('booksControlling');
+}); //->middleware(['auth', 'adminCreation']);
 
 Route::resource('admin','UsersController');
+
+Route::resource('book','BooksController');

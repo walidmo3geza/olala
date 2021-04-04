@@ -77,7 +77,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Sekka Wahdaa
+                    Olala
                 </div>
             </div>
         </div>
